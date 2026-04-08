@@ -20,8 +20,9 @@ try:
     st.markdown(f'<p style="color:gray; font-size:0.9rem;">Arte Visual: Evelyn Ferreira Falcão</p>', unsafe_allow_html=True)
     st.write("---")
     
-    # 4. Botão de Compartilhar configurado
-    link_wa = "https://api.whatsapp.com/send?text=Olha%20que%20mensagem%20linda%20eu%20recebi%20hoje%20no%20app%20da%20Evelyn!"
+    # 4. Botão de Compartilhar com o SEU LINK real
+    # Já deixei o link pronto com o endereço que você me mandou
+    link_wa = "https://api.whatsapp.com/send?text=Olha%20que%20mensagem%20linda%20eu%20recebi%20hoje%20no%20app%20da%20Evelyn!%20%E2%9C%A8%20Veja%20aqui:%20https://mensagemdiaria.streamlit.app/"
 
     st.link_button("📲 Compartilhar no WhatsApp", link_wa)
     st.caption("💡 Dica: No celular, pressione a imagem para salvá-la.")
