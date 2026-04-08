@@ -1,6 +1,5 @@
 import streamlit as st
 from datetime import date
-from urllib.parse import quote
 
 # 1. Configuração do título na aba do navegador
 st.set_page_config(page_title="Mensagem Diária", page_icon="✨")
@@ -22,8 +21,7 @@ try:
     st.write("---")
     
     # 4. Botão de Compartilhar configurado
-    texto_whats = "Olha que mensagem linda eu recebi hoje no app da Evelyn! ✨"
-    link_wa = f"https://wa.me/?text={quote(texto_whats)}"
+    link_wa = "https://api.whatsapp.com/send?text=Olha%20que%20mensagem%20linda%20eu%20recebi%20hoje%20no%20app%20da%20Evelyn!"
 
     st.link_button("📲 Compartilhar no WhatsApp", link_wa)
     st.caption("💡 Dica: No celular, pressione a imagem para salvá-la.")
