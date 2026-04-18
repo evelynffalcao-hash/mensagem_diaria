@@ -4,9 +4,9 @@ from datetime import date
 # 1. Configuração do título na aba do navegador
 st.set_page_config(page_title="Mensagem Diária", page_icon="✨")
 
-# 2. Lógica para escolher a imagem do dia (1 a 14)
+# 2. Lógica para escolher a imagem do dia (1 a 20)
 dia_do_ano = date.today().timetuple().tm_yday
-numero_imagem = (dia_do_ano % 14) + 1
+numero_imagem = (dia_do_ano % 20) + 1
 nome_arquivo = f"msg{numero_imagem}.jpg"
 
 # 3. O que aparece na tela
